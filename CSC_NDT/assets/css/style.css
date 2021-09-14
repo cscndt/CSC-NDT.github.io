@@ -1,0 +1,198 @@
+*{margin: 0;padding: 0;}
+body {
+  background: #ddd;
+}
+
+#container
+{
+height: 600px;
+width: 100%;
+background-color: #ddd;
+overflow: hidden;
+position: relative;
+#overflow-x: scroll;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#thumbs
+{
+background-color: #ddd;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: auto;
+overflow: hidden;
+white-space: nowrap;
+padding: 30px 100px;
+}
+
+.history-block {
+  height: 100%;
+  width: 350px;
+  background-color: #cdcdcd;
+  margin: 0 -2px;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  font-family: 'roboto condensed', sans-serif;
+  font-size:60px;
+  font-weight: 100;
+  color: #FFF;
+  cursor: pointer;
+  box-shadow: 2px 5px 20px rgba(0,0,0,0.8);
+  transition: width 0.2s;
+}
+
+.history-block:last-of-type {
+  border-right: none;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  transition: background .5s;
+  background: rgba(0,0,0,0.7);
+}
+
+.cover:hover {
+  width: 100%;
+  height: 100%;
+  transition: background .5s;
+  background: rgba(0,0,0,0.6);
+}
+
+.year {
+  position: absolute;
+    display: block;
+    width: 260px;
+    top: 0px;
+    font-size: 27px;
+  font-weight:500;
+    margin: 50px 20px;
+    white-space: normal;
+    transition: width 0.2s;
+}
+
+.title {
+  position: absolute;
+  display: block;
+  width: 300px;
+    top: 20px;
+    font-size: 15px;
+    margin: 30px;
+  white-space: normal;
+  transition: width 0.2s;
+}
+
+
+.timeline {
+  display:none;
+  position: absolute;
+  bottom: 30px;
+    font-size: 20px;
+    margin: 20px;
+  transition: display 0.8s;
+}
+
+.timeline ul {
+  margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+.timeline ul li {
+  display: inline;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0px 20px; <!字元間距>
+}
+
+.timeline ul li:before {   
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255,255,255,0.5);
+  content: '\f10c';
+  position: absolute;
+  top: 30px;
+  margin-left:10px;   <!點位置>
+  transition: all 0.5s;
+}
+
+.timeline ul li:after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  margin-left:-10px;
+  width: 65px;      <!線長-前>
+  height:2px;
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.5s;
+}
+
+.timelineYear, .timelineYear:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.8s;
+}
+
+.timeline ul li:hover:before {  <!點-後>
+  content: '\f111';
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.5s;
+  top: 29px;
+  margin-left:10px
+}
+
+.timeline ul li:hover:after { 
+  content: '';
+  position: absolute;
+  top: 40px;
+  margin-left:-10px;
+  width: 65px;      <!線長-後>
+  height:2px;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.timeline ul li:hover .timelineYear {
+  position: static;
+  top:-10px;
+}
+
+.bg-66 {
+  background: url(../images/585x540/品質認證/single_service_01.jpg);
+  background-size:cover;
+}
+
+.bg-76 {
+  background: url(../images/585x540/汽電共生/single_service_02.jpg);
+  background-size:cover;
+}
+
+.bg-86 {
+  background: url(../images/585x540/石化生產/single_service_03.jpg);
+  background-size:cover;
+}
+
+.bg-96 {
+  background: url(../images/585x540/鋼鐵生產/single_service_04.jpg);
+  background-size:cover;
+}
+
+.bg-06 {
+  background: url(../images/585x540/鋼結構/single_service_05.jpg);
+  background-size:cover;
+}
+
+.bg-16 {
+  background: url(../images/585x540/電氣設備/single_service_06.jpg);
+  background-size:cover;
+}
+.bg-26 {
+  background: url(../images/585x540/離岸風電/single_service_07.jpg);
+  background-size:cover;
+}
